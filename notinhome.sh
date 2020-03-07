@@ -18,5 +18,6 @@ message(){
 	read -n 1 -rsp "Press any key to continue"
 	tput cnorm #cursor visible
 }
-
+tput smcup #save then clean screen
 message "Set download location manually on Client"
+tput rmcup
